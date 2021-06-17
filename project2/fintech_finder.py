@@ -14,7 +14,6 @@ from web3.gas_strategies.time_based import medium_gas_price_strategy
 # Wallet functionality
 
 def generate_account():
-    """Create a digital wallet and Ethereum account from a mnemonic seed phrase."""
     # Fetch mnemonic from environment variable.
     mnemonic = os.getenv("MNEMONIC")
 
@@ -30,7 +29,6 @@ def generate_account():
     return account
 
 def get_balance(address):
-    """Using an Ethereum account address access the balance of Ether"""
     # Get balance of address in Wei
     wei_balance = w3.eth.get_balance(address)
 
@@ -42,7 +40,6 @@ def get_balance(address):
 
 
 def send_transaction(account, to, wage):
-    """Send an authorized transaction to the Kovan testnet."""
     # Set gas price strategy
     w3.eth.setGasPriceStrategy(medium_gas_price_strategy)
 
@@ -99,6 +96,7 @@ import streamlit as st
 from dataclasses import dataclass
 from typing import Any, List
 
+# from crypto import convertDataToJSON, pinJSONtoIPFS, initContract, w3
 ################################################################################
 # Step 1:
 # Import Ethereum Transaction Functions into the Fintech Finder Application
@@ -145,10 +143,9 @@ from typing import Any, List
 # * `get_balance`
 # * `send_transaction`
 
-# @TODO:
 # From `crypto_wallet.py import the functions generate_account, get_balance,
 # and send_transaction
-# os.system("crypto_wallet.py")
+# import crypto_wallet
 
 ################################################################################
 # Fintech Finder Candidate Information
