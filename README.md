@@ -5,3 +5,4 @@
 # Blockchain Code Activity 2
 
 ![image](https://user-images.githubusercontent.com/83609204/122310938-14fbb080-cedf-11eb-8f08-37d604bbaea3.png)
+![image](https://user-images.githubusercontent.com/83609204/122311096-702da300-cedf-11eb-93e1-c98bc2339cd6.png)
